@@ -5,7 +5,7 @@ import './Cards.css';
 function Cards() {
   return (
     <div className="cards">
-      <h1> Check out these EPIC Destinatins</h1>
+      <h1> Check out these EPIC Destinations</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
@@ -25,19 +25,19 @@ function Cards() {
           <ul className="cards__items">
             <CardItems 
             src = "/images/img-3.jpg"
-            text = "Explore the hidden waterfall deep inside the Amazon jungle"
+            text = "In the open sea like a pirate, we know what drives you"
             label= 'Liberty'
             path = '/services'
             />
             <CardItems 
             src = "/images/img-8.jpg"
-            text = "Travel through the island of Bali in a Private Cruise"
+            text = "a journey rich in discovery and North African culture"
             label= 'exploration'
             path = '/services'
             />
             <CardItems 
             src = "/images/img-4.jpg"
-            text = "Travel through the island of Bali in a Private Cruise"
+            text = "the island with wonderful treasures, a breathtaking landscape"
             label= 'Space for you'
             path = '/services'
             />

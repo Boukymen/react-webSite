@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import { Button } from './Button'
 import './Footer.css'
 function Footer() {
+
+const goBackToTop = () => {
+  window.scrollTo(0, 0);
+}
   return (  
     <div className="footer-container">
       <section className="footer-subscription">
@@ -15,8 +19,8 @@ function Footer() {
         <div className="input-areas">
           <form>
             <input type="email" name="email" placeholder="Your Email" className="footer-input" />
-            <Button
-            buttonStyle='btn--outline'>Subscribe</Button>
+            <Button onClick={goBackToTop}
+            buttonStyle='btn--outline' Link_i="/sign-up" >Subscribe</Button>
           </form>
         </div>
       </section>

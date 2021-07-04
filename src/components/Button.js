@@ -6,12 +6,12 @@ import {Link} from 'react-router-dom';
 const STYLES = ['btn--primary', 'btn--outline'];
 
 const SIZES = ['btn--medium', 'btn--large'];
-
-export const Button = ({
+ export const Button = ({
   children,
    type,
    onClick,
    buttonStyle,
+   Link_i,
    buttonSize
     }) => {
       const checkButtonStyle = STYLES.includes(buttonStyle) 
@@ -22,7 +22,9 @@ export const Button = ({
       : SIZES[0]
 
       return(
-        <Link to='/sign-up' className= 'btn-mobile'>
+        
+        // ''
+        <Link to={Link_i} className= 'btn-mobile'>
           <button
           className={`btn  ${checkButtonStyle} ${checkButtonSize}`}
           onClick={onClick}

@@ -7,6 +7,7 @@
   
   .home,
   .services,
+  .about,
   .products,
   .sign-up {
   display: flex;
@@ -17,29 +18,37 @@
   }
   
   .services {
-  background-image: url('http://127.0.0.1:3000/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #FFF;
   font-size: 100px;
   }
   
   .products {
-   background-image: url('http://127.0.0.1:3000/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
   color: #FFF;
   font-size: 100px;
+  }
+  .about {
+    color: #FFF;
+    font-size: 100px;
   }
   
   .sign-up {
-   background-image: url('http://127.0.0.1:3000/images/img-8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #FFF;
   font-size: 100px;
   }
-  
+  @media screen and (max-width:960px) {
+
+  .services {
+    font-size: 50px;
+    }
+    
+    .products {
+    font-size: 50px;
+    }
+    .about {
+      font-size: 50px;
+    }
+    
+    .sign-up {
+    font-size: 50px;
+    }
+  }
